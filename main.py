@@ -41,7 +41,7 @@ def req_cnt_decrement():
 
 osubot = osu.OsuBot(config.osuirc_name, config.osuirc_password)
 osuapi = osu.OsuApi(config.osuapi_id, config.osuapi_secret)
-twitchbot = twitch.TwitchBot(config.twitch_name, config.twitch_password, config.twitch_channel)
+twitchbot = twitch.TwitchBot(config.twitch_name, config.twitch_password, '#'+config.twitch_channel)
 
 pattern = "osu.ppy.sh/b[\w/]*/\d{4,8}"
 msg_sep = F"PRIVMSG {config.twitch_channel} :"
