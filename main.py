@@ -44,7 +44,7 @@ osuapi = osu.OsuApi(config.osuapi_id, config.osuapi_secret)
 twitchbot = twitch.TwitchBot(config.twitch_name, config.twitch_password, '#'+config.twitch_channel)
 
 pattern = "osu.ppy.sh/b[\w/]*/\d{4,8}"
-msg_sep = F"PRIVMSG {config.twitch_channel} :"
+msg_sep = F"PRIVMSG #{config.twitch_channel} :"
 
 osubot.connect()
 twitchbot.connect()
