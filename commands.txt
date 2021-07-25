@@ -1,2 +1,3 @@
 #com1, com2, ... (without '!') :: reply message
 hi, hello :: hello
+o/ :: o/
