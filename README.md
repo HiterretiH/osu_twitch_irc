@@ -10,7 +10,7 @@ Useful twitch chatbot for osu! streamers
 # Features
 - Simple text commands
 - Current map and skin (!map, !np, !song, !skin)
-- Song request from twitch chat (bot catch map urls in chat messages and send to osu! user)
+- Song request from twitch chat (bot catch map urls in twitch chat and send to osu! PM)
 
 # Usage
 1. Download repository
@@ -21,7 +21,7 @@ Useful twitch chatbot for osu! streamers
 
 # Config variables desription
 | Variable | Description | Where you can get it |
-| :---: | :---: | :---: |
+| :--- | :--- | :--- |
 | osuirc_name | Bot osu account username | https://osu.ppy.sh/p/irc |
 | osuirc_password | Bot Bancho IRC account password (not from main account) | https://osu.ppy.sh/p/irc |
 | osuirc_destination | Username of usu account, which will receive song requests from chat. Should be different with `osuirc_name` | Account page |
@@ -29,7 +29,7 @@ Useful twitch chatbot for osu! streamers
 | osuapi_secret | Oauth application secret | https://osu.ppy.sh/home/account/edit#new-oauth-application |
 | twitch_name | Bot twitch account username | Account page |
 | twitch_password | Bot OAuth twitch IRC token (including "oauth:") | https://twitchapps.com/tmi/ |
-| twitch_channel | Twitch channel name on which bot will work | Account page |
+| twitch_channel | Twitch channel name where bot will work | Account page |
 
 # How to edit text commands
 Open `commands.txt`
