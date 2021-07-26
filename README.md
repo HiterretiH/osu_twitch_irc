@@ -39,8 +39,8 @@ hi, hello :: hi
 o/ :: o/
 !profile :: https://osu.ppy.sh/users/2
 ```
-- In **left** side of `::` there is comma-separated list of commands
-- In **right** side of `::` there is reply message for this commands
+- To the left of `::` there is comma-separated list of commands
+- To the right of `::` there is reply message for this commands
 - Lines, started with `#` - comments and will be skipped on file reading
 
 For given examples:
