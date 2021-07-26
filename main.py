@@ -44,7 +44,7 @@ osuapi = osu.OsuApi(config.osuapi_id, config.osuapi_secret)
 twitchbot = twitch.TwitchBot(config.twitch_name, config.twitch_password, '#'+config.twitch_channel)
 
 pattern = "osu.ppy.sh/b[\w/]*/\d{4,8}"
-msg_sep = F"PRIVMSG #{config.twitch_channel} :"
+msg_sep = f"PRIVMSG #{config.twitch_channel} :"
 
 osubot.connect()
 twitchbot.connect()
@@ -81,14 +81,13 @@ while True:
         if len(maps) > 0:
             for beatmap in maps:
                 send_beatmap(name, beatmap)
-        elif msg[0] == "!" and len(msg) > 1:
-            msg = msg[1:]
-            if msg in ("map", "np", "song"):
-                print(f"{name}: !{msg}")
+        else:
+            if msg in ("!map", "!np", "!song"):
+                print(f"{name}: {msg}")
                 twitchbot.reply(name, f"https://osu.ppy.sh/b/{gosumemory.get_data()['menu']['bm']['id']}")
-            elif msg == "skin":
-                print(f"{name}: !{msg}")
+            elif msg == "!skin":
+                print(f"{name}: {msg}")
                 twitchbot.reply(name, f"current skin: {gosumemory.get_data()['settings']['folders']['skin']}")
             elif commands.get(msg):
-                print(f"{name}: !{msg}")
+                print(f"{name}: {msg}")
                 twitchbot.reply(name, commands.get(msg))
