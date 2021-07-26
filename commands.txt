@@ -1,4 +1,3 @@
-#com1, com2, ... :: reply message
 hi, hello :: hi
 o/ :: o/
 !profile :: https://osu.ppy.sh/users/2
