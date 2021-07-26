@@ -38,6 +38,7 @@ def req_cnt_decrement():
     global req_cnt
     req_cnt -= 1
 
+
 config.osuirc_name = config.osuirc_name.replace(' ', '_')
 config.osuirc_destination = config.osuirc_destination.replace(' ', '_')
 
