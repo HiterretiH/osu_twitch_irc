@@ -1,3 +1,4 @@
-#com1, com2, ... (without '!') :: reply message
-hi, hello :: hello
+#com1, com2, ... :: reply message
+hi, hello :: hi
 o/ :: o/
+!profile :: https://osu.ppy.sh/users/2
